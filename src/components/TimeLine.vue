@@ -45,7 +45,7 @@ function selectPeriod(period: Period) {
       class="panel-block"
     >
       <a>{{ post.title }}</a>
-      <div>{{ post.created.toFormat('d MMM') }}</div>
+      <div>{{ post.created.setLocale('ru').toFormat('d MMMM') }}</div>
     </a>
   </nav>
 </template>
